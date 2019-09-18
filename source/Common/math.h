@@ -4,6 +4,7 @@
 #include "common.h"
 
 typedef int INTE;
+typedef unsigned long ULINTE;
 typedef double REAL;
 
 typedef VectorXd POINT;

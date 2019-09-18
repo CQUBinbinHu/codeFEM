@@ -6,8 +6,9 @@ project(Hello)
 #set version
 set (FEM_VERSION_MAJOR 0)
 set (FEM_VERSION_MINOR 0)
-#set (CMAKE_BUILD_TYPE "Release")
-set (CMAKE_BUILD_TYPE "Debug")
+
+set (CMAKE_BUILD_TYPE "Release")
+#set (CMAKE_BUILD_TYPE "Debug")
 # add sub libs
 add_subdirectory(./source/NumericalMesh)
 add_subdirectory(./source/OpenMesh)
