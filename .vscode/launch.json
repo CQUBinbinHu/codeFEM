@@ -8,7 +8,7 @@
             "name": "(gdb) Launch",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/hello",
+            "program": "${workspaceFolder}/build/bin/hello.o",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
