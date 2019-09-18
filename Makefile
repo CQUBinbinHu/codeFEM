@@ -123,32 +123,32 @@ hello.o/fast:
 	$(MAKE) -f CMakeFiles/hello.o.dir/build.make CMakeFiles/hello.o.dir/build
 .PHONY : hello.o/fast
 
-source/helloworld.o: source/helloworld.cpp.o
+source/Test/helloworld.o: source/Test/helloworld.cpp.o
 
-.PHONY : source/helloworld.o
+.PHONY : source/Test/helloworld.o
 
 # target to build an object file
-source/helloworld.cpp.o:
-	$(MAKE) -f CMakeFiles/hello.o.dir/build.make CMakeFiles/hello.o.dir/source/helloworld.cpp.o
-.PHONY : source/helloworld.cpp.o
+source/Test/helloworld.cpp.o:
+	$(MAKE) -f CMakeFiles/hello.o.dir/build.make CMakeFiles/hello.o.dir/source/Test/helloworld.cpp.o
+.PHONY : source/Test/helloworld.cpp.o
 
-source/helloworld.i: source/helloworld.cpp.i
+source/Test/helloworld.i: source/Test/helloworld.cpp.i
 
-.PHONY : source/helloworld.i
+.PHONY : source/Test/helloworld.i
 
 # target to preprocess a source file
-source/helloworld.cpp.i:
-	$(MAKE) -f CMakeFiles/hello.o.dir/build.make CMakeFiles/hello.o.dir/source/helloworld.cpp.i
-.PHONY : source/helloworld.cpp.i
+source/Test/helloworld.cpp.i:
+	$(MAKE) -f CMakeFiles/hello.o.dir/build.make CMakeFiles/hello.o.dir/source/Test/helloworld.cpp.i
+.PHONY : source/Test/helloworld.cpp.i
 
-source/helloworld.s: source/helloworld.cpp.s
+source/Test/helloworld.s: source/Test/helloworld.cpp.s
 
-.PHONY : source/helloworld.s
+.PHONY : source/Test/helloworld.s
 
 # target to generate assembly for a file
-source/helloworld.cpp.s:
-	$(MAKE) -f CMakeFiles/hello.o.dir/build.make CMakeFiles/hello.o.dir/source/helloworld.cpp.s
-.PHONY : source/helloworld.cpp.s
+source/Test/helloworld.cpp.s:
+	$(MAKE) -f CMakeFiles/hello.o.dir/build.make CMakeFiles/hello.o.dir/source/Test/helloworld.cpp.s
+.PHONY : source/Test/helloworld.cpp.s
 
 # Help Target
 help:
@@ -159,9 +159,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... hello.o"
 	@echo "... edit_cache"
-	@echo "... source/helloworld.o"
-	@echo "... source/helloworld.i"
-	@echo "... source/helloworld.s"
+	@echo "... source/Test/helloworld.o"
+	@echo "... source/Test/helloworld.i"
+	@echo "... source/Test/helloworld.s"
 .PHONY : help
 
 

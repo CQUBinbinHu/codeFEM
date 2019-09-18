@@ -7,7 +7,7 @@ set (FEM_VERSION_MINOR 0)
 #set (CMAKE_BUILD_TYPE "Release")
 set (CMAKE_BUILD_TYPE "Debug")
 # add source files
-aux_source_directory(./source/ TEST_PROJ)
+aux_source_directory(./source/Test/ TEST_PROJ)
 # Target
 add_executable(hello.o ${TEST_PROJ})
 # set output directories

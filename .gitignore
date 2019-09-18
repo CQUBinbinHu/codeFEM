@@ -3,5 +3,6 @@
 *.exe
 *.cmake
 Makefile
+CMakeCache.txt
 /build
 /CMakeFiles
