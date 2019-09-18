@@ -1,0 +1,6 @@
+*.o
+*.a
+*.exe
+*.cmake
+/build
+/CMakeFiles
