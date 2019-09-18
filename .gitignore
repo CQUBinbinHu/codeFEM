@@ -6,3 +6,6 @@ Makefile
 CMakeCache.txt
 /build
 /CMakeFiles
+/source/NumericalMesh/CMakeFiles
+/source/NumericalMethods/CMakeFiles
+/source/OpenMesh/CMakeFiles

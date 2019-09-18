@@ -123,32 +123,71 @@ hello.o/fast:
 	$(MAKE) -f CMakeFiles/hello.o.dir/build.make CMakeFiles/hello.o.dir/build
 .PHONY : hello.o/fast
 
-source/Test/helloworld.o: source/Test/helloworld.cpp.o
+#=============================================================================
+# Target rules for targets named NumericalMesh
 
-.PHONY : source/Test/helloworld.o
+# Build rule for target.
+NumericalMesh: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 NumericalMesh
+.PHONY : NumericalMesh
+
+# fast build rule for target.
+NumericalMesh/fast:
+	$(MAKE) -f source/NumericalMesh/CMakeFiles/NumericalMesh.dir/build.make source/NumericalMesh/CMakeFiles/NumericalMesh.dir/build
+.PHONY : NumericalMesh/fast
+
+#=============================================================================
+# Target rules for targets named OpenMesh
+
+# Build rule for target.
+OpenMesh: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 OpenMesh
+.PHONY : OpenMesh
+
+# fast build rule for target.
+OpenMesh/fast:
+	$(MAKE) -f source/OpenMesh/CMakeFiles/OpenMesh.dir/build.make source/OpenMesh/CMakeFiles/OpenMesh.dir/build
+.PHONY : OpenMesh/fast
+
+#=============================================================================
+# Target rules for targets named NumericalMethods
+
+# Build rule for target.
+NumericalMethods: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 NumericalMethods
+.PHONY : NumericalMethods
+
+# fast build rule for target.
+NumericalMethods/fast:
+	$(MAKE) -f source/NumericalMethods/CMakeFiles/NumericalMethods.dir/build.make source/NumericalMethods/CMakeFiles/NumericalMethods.dir/build
+.PHONY : NumericalMethods/fast
+
+source/Test/Optimization/helloworld.o: source/Test/Optimization/helloworld.cpp.o
+
+.PHONY : source/Test/Optimization/helloworld.o
 
 # target to build an object file
-source/Test/helloworld.cpp.o:
-	$(MAKE) -f CMakeFiles/hello.o.dir/build.make CMakeFiles/hello.o.dir/source/Test/helloworld.cpp.o
-.PHONY : source/Test/helloworld.cpp.o
+source/Test/Optimization/helloworld.cpp.o:
+	$(MAKE) -f CMakeFiles/hello.o.dir/build.make CMakeFiles/hello.o.dir/source/Test/Optimization/helloworld.cpp.o
+.PHONY : source/Test/Optimization/helloworld.cpp.o
 
-source/Test/helloworld.i: source/Test/helloworld.cpp.i
+source/Test/Optimization/helloworld.i: source/Test/Optimization/helloworld.cpp.i
 
-.PHONY : source/Test/helloworld.i
+.PHONY : source/Test/Optimization/helloworld.i
 
 # target to preprocess a source file
-source/Test/helloworld.cpp.i:
-	$(MAKE) -f CMakeFiles/hello.o.dir/build.make CMakeFiles/hello.o.dir/source/Test/helloworld.cpp.i
-.PHONY : source/Test/helloworld.cpp.i
+source/Test/Optimization/helloworld.cpp.i:
+	$(MAKE) -f CMakeFiles/hello.o.dir/build.make CMakeFiles/hello.o.dir/source/Test/Optimization/helloworld.cpp.i
+.PHONY : source/Test/Optimization/helloworld.cpp.i
 
-source/Test/helloworld.s: source/Test/helloworld.cpp.s
+source/Test/Optimization/helloworld.s: source/Test/Optimization/helloworld.cpp.s
 
-.PHONY : source/Test/helloworld.s
+.PHONY : source/Test/Optimization/helloworld.s
 
 # target to generate assembly for a file
-source/Test/helloworld.cpp.s:
-	$(MAKE) -f CMakeFiles/hello.o.dir/build.make CMakeFiles/hello.o.dir/source/Test/helloworld.cpp.s
-.PHONY : source/Test/helloworld.cpp.s
+source/Test/Optimization/helloworld.cpp.s:
+	$(MAKE) -f CMakeFiles/hello.o.dir/build.make CMakeFiles/hello.o.dir/source/Test/Optimization/helloworld.cpp.s
+.PHONY : source/Test/Optimization/helloworld.cpp.s
 
 # Help Target
 help:
@@ -159,9 +198,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... hello.o"
 	@echo "... edit_cache"
-	@echo "... source/Test/helloworld.o"
-	@echo "... source/Test/helloworld.i"
-	@echo "... source/Test/helloworld.s"
+	@echo "... NumericalMesh"
+	@echo "... OpenMesh"
+	@echo "... NumericalMethods"
+	@echo "... source/Test/Optimization/helloworld.o"
+	@echo "... source/Test/Optimization/helloworld.i"
+	@echo "... source/Test/Optimization/helloworld.s"
 .PHONY : help
 
 
