@@ -2,5 +2,6 @@
 *.a
 *.exe
 *.cmake
+Makefile
 /build
 /CMakeFiles

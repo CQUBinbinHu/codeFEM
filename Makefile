@@ -123,32 +123,32 @@ hello.o/fast:
 	$(MAKE) -f CMakeFiles/hello.o.dir/build.make CMakeFiles/hello.o.dir/build
 .PHONY : hello.o/fast
 
-helloworld.o: helloworld.cpp.o
+source/helloworld.o: source/helloworld.cpp.o
 
-.PHONY : helloworld.o
+.PHONY : source/helloworld.o
 
 # target to build an object file
-helloworld.cpp.o:
-	$(MAKE) -f CMakeFiles/hello.o.dir/build.make CMakeFiles/hello.o.dir/helloworld.cpp.o
-.PHONY : helloworld.cpp.o
+source/helloworld.cpp.o:
+	$(MAKE) -f CMakeFiles/hello.o.dir/build.make CMakeFiles/hello.o.dir/source/helloworld.cpp.o
+.PHONY : source/helloworld.cpp.o
 
-helloworld.i: helloworld.cpp.i
+source/helloworld.i: source/helloworld.cpp.i
 
-.PHONY : helloworld.i
+.PHONY : source/helloworld.i
 
 # target to preprocess a source file
-helloworld.cpp.i:
-	$(MAKE) -f CMakeFiles/hello.o.dir/build.make CMakeFiles/hello.o.dir/helloworld.cpp.i
-.PHONY : helloworld.cpp.i
+source/helloworld.cpp.i:
+	$(MAKE) -f CMakeFiles/hello.o.dir/build.make CMakeFiles/hello.o.dir/source/helloworld.cpp.i
+.PHONY : source/helloworld.cpp.i
 
-helloworld.s: helloworld.cpp.s
+source/helloworld.s: source/helloworld.cpp.s
 
-.PHONY : helloworld.s
+.PHONY : source/helloworld.s
 
 # target to generate assembly for a file
-helloworld.cpp.s:
-	$(MAKE) -f CMakeFiles/hello.o.dir/build.make CMakeFiles/hello.o.dir/helloworld.cpp.s
-.PHONY : helloworld.cpp.s
+source/helloworld.cpp.s:
+	$(MAKE) -f CMakeFiles/hello.o.dir/build.make CMakeFiles/hello.o.dir/source/helloworld.cpp.s
+.PHONY : source/helloworld.cpp.s
 
 # Help Target
 help:
@@ -159,9 +159,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... hello.o"
 	@echo "... edit_cache"
-	@echo "... helloworld.o"
-	@echo "... helloworld.i"
-	@echo "... helloworld.s"
+	@echo "... source/helloworld.o"
+	@echo "... source/helloworld.i"
+	@echo "... source/helloworld.s"
 .PHONY : help
 
 
