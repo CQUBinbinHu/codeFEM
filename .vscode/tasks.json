@@ -4,18 +4,18 @@
     "version": "2.0.0",
     "tasks": [
         {
-        "label": "cmake",
+        "label": "make",
             "type": "shell",
-            "command": "cmake .",
+            "command": "cd ./build && make",
             "group": {
                 "kind": "build",
                 "isDefault": true
             }
         },
         {
-            "label": "make",
+            "label": "CMAKE",
             "type": "shell",
-            "command": "make",
+            "command": "cd ./build && cmake ..",
         }
     ]
 }

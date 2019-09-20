@@ -11,7 +11,7 @@ int main(){
     // for runtime checkout
     clock_t startTime,endTime;
     // initializaiton of Matrix
-    ULINTE SN = 10000;
+    ULINTE SN = 1000;
     vector<vector<REAL>> vec1;
     vector<vector<REAL>> vec2;
     vector<vector<REAL>> vec3;
