@@ -4,6 +4,7 @@
 #include "Common.h"
 #include "Solver.h"
 #include "Instance.h"
+typedef ULINTE U_LONG;
 /*
  * Solve the unconstraint optimization model
  */

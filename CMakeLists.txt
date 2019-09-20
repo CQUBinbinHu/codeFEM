@@ -7,18 +7,17 @@ project(Hello)
 set (OPTIMIZATION_VERSION_MAJOR 0)
 set (OPTIMIZATION_VERSION_MINOR 0)
 
-set (CMAKE_BUILD_TYPE "Release")
-#set (CMAKE_BUILD_TYPE "Debug")
+#set (CMAKE_BUILD_TYPE "Release")
+set (CMAKE_BUILD_TYPE "Debug")
 # add sub libs
 add_subdirectory(./source/NumericalMesh)
-add_subdirectory(./source/OpenMesh)
 add_subdirectory(./source/NumericalMethods)
+#add_subdirectory(./source/OpenMesh)
 # Target
 aux_source_directory(./source/Test/Optimization/ TEST_PROJ)
 add_executable(optimization.o ${TEST_PROJ})
 # link
 target_link_libraries(optimization.o 
-    OpenMesh
     NumericalMesh
     NumericalMethods)
 # set output directories

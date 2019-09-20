@@ -8,7 +8,7 @@
             "name": "(gdb) Launch",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/build/bin/hello.o",
+            "program": "${workspaceFolder}/build/bin/optimization.o",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",

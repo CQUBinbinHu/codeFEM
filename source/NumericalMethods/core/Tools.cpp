@@ -1,5 +1,6 @@
 #include "Tools.h"
-
+using namespace NumericalMethods;
+/// generate quadracture points in [-1, +1]
 void NumerIntegral::GLPoints(MATRIX& GP,POINT& p1,POINT& p2){
   GP.resize(Dim,Gvec.size());
   for(unsigned int ni=0;ni<Gvec.size();ni++){
@@ -9,9 +10,8 @@ void NumerIntegral::GLPoints(MATRIX& GP,POINT& p1,POINT& p2){
     p0=par1*p1+par2*p2;
     GP.col(ni)=p0;
   }
-
 };
-
+/// Weight for quadracture points in [-1, +1]
 void NumerIntegral::GLWeight(VEC& wvec,POINT&,POINT&){
   //wvec=WGvec;
   wvec.resize(WGvec.size());
@@ -19,7 +19,7 @@ void NumerIntegral::GLWeight(VEC& wvec,POINT&,POINT&){
     wvec(i)=WGvec[i];
   }
 };
-
+/// generate quadracture points in [-1, +1]*[-1, +1]
 void NumerIntegral::GQPoints(MATRIX& GP,POINT& p1,POINT& p2){
     GP.resize(2,Gvec.size()*Gvec.size());
     POINT gpoint(2);
@@ -33,7 +33,7 @@ void NumerIntegral::GQPoints(MATRIX& GP,POINT& p1,POINT& p2){
         }
     }
 };
-
+/// Weights for quadracture points in [-1, +1]*[-1, +1]
 void NumerIntegral::GQWeight(VEC& wvec,POINT&,POINT&){
   //wvec=WGvec;
   wvec.resize(WGvec.size()*WGvec.size());

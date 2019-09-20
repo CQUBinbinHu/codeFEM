@@ -63,13 +63,14 @@ int main()
     ////////////////////
     VEC displacement;
     //INSTANCE_Man LinearFE(quadMesh,displacement);
-    INSTANCE2 LinearFE(quadMesh,displacement);
+    //INSTANCE2 LinearFE(quadMesh,displacement);
+    SolverElesticity LinearFE(quadMesh,displacement);
 
     LinearFE.set_Geo(NX,NY);
     LinearFE.set_NumShape(VN);
     LinearFE.set_DirichBound();
     LinearFE.set_NeumanBound();
-    //LinearFE.set_ShapeFunction();
+    LinearFE.set_ShapeFunction();
     LinearFE.solve();
     /// logout
     MATRIX strainNode;

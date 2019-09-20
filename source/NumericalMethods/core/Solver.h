@@ -28,9 +28,6 @@ namespace NumericalMethods {
         public :
             FESolver(int dim, int sn ) : BaseSolver(dim,sn) {};
             ~FESolver() {};
-
-            virtual bool writeFile(string filename)const;
-            virtual bool readFile(string filename);
     };
     // Finite Difference Solver
     class FDSolver : public BaseSolver {

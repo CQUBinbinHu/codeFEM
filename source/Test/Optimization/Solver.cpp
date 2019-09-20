@@ -1,4 +1,5 @@
 #include "Solver.h"
+using namespace Optimization;
 //#include "../../core/NumericalMethods/NumericalMethods/Tools.h"
 void SolverElesticity::set_ShapeFunction(){
 

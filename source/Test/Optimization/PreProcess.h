@@ -5,6 +5,7 @@
 #include "Mesh.h"
 using namespace NumericalMesh;
 
+namespace Optimization{
 class GenerateMesh {
 
     private:
@@ -17,9 +18,7 @@ class GenerateMesh {
             /// debug
             cout<< "GenerateMesh()"<<endl;
         };
-
         ~GenerateMesh(){};
-
         /// IO
         bool get_Mesh(Mesh&);
         bool get_MeshFromFile(string,Mesh&);
@@ -27,7 +26,10 @@ class GenerateMesh {
         bool set_GeometryFromFile(string);
         void set_NumShape(int num){ NVert = num; };
 };
-
+//////////////////////
+// end of namespace //
+//////////////////////
+}
 #endif
 
 

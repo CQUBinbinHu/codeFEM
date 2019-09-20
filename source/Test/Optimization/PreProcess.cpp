@@ -1,12 +1,13 @@
 #include <sstream>
 #include "PreProcess.h"
+using namespace std;
+using namespace Optimization;
 typedef ULINTE U_LONG;
 /// get the Mesh form file of the outputs of ABAQUS 
 bool GenerateMesh::get_MeshFromFile(string filename,Mesh& mesh){
     /*
      * Read from file for meshgrid;
      */
-    ifstream infile(filename);
     vector<POINT2> nodes;
     vector<VectorXi> elements;
     POINT2 coord;
@@ -23,10 +24,12 @@ bool GenerateMesh::get_MeshFromFile(string filename,Mesh& mesh){
 
     char GET_CHAR;
     int GET_INT;
-    getline(infile,type);
+
+    ifstream infile(filename);
+    std::getline(infile,type);
     if (type == typeNode || type==typeNode1){
         while(infile.eof()==false){
-            getline(infile,newline);
+            std::getline(infile,newline);
             if(newline == typeEle || newline==typeEle1){
                 break;
             }else{

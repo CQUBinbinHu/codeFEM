@@ -1,4 +1,5 @@
 #include "Optimization.h"
+using namespace Optimization;
 
 bool SolverOptimization::Initialization(){
 
@@ -44,7 +45,6 @@ bool SolverOptimization::Initialization(){
     }
     return true;
 };
-
 void SolverOptimization::getDescent(){
 
     MATRIX matDescent(EN*quadParameters.size(),level.size());
@@ -135,7 +135,6 @@ void SolverOptimization::getDescent(){
     /// get levelDescent using linear least squares
     levelDescent = matDescent.bdcSvd(ComputeThinU | ComputeThinV).solve(levelDescentQuad);
 };
-
 double SolverOptimization::getObjection(VEC& newLevel){
 
     FEM.solve();
@@ -158,7 +157,6 @@ double SolverOptimization::getObjection(VEC& newLevel){
 
     return obj;
 };
-
 void SolverOptimization::getShapeFunction(VEC& shapeInfo,VEC point){
 
     shapeInfo.resize(PN);
@@ -243,7 +241,6 @@ void SolverOptimization::getShapeFunctionGrad2(MATRIX& shapeInfo,VEC point){
              };
     };
 };
-
 void SolverOptimization::SearchLine(double& delta){
     double Ros = 0.1;
     vector<double> searchRo;
@@ -295,7 +292,6 @@ void SolverOptimization::SearchLine(double& delta){
     level += ra * levelDescent;
     delta = (valObject0 - valObject1)/valObject0;
 };
-
 bool SolverOptimization::solve(){
 
     double delta = 1.;
@@ -307,3 +303,6 @@ bool SolverOptimization::solve(){
     return true;
 };
 
+double SolverOptimization::HeasiveFun(double){
+    return 0.;
+};

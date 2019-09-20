@@ -26,7 +26,7 @@ void BaseFEM::get_Strain_Quad(MATRIX& strain){
         outfile << endl;
     }
     outfile.close();
-}
+};
 /// get the strain on nodes
 void BaseFEM::get_Strain_Node(MATRIX& strain){
     int NS = 2*NumShape;
@@ -53,7 +53,7 @@ void BaseFEM::get_Strain_Node(MATRIX& strain){
         outfile << endl;
     }
     outfile.close();
-}
+};
 /// get the stress on quadracture points
 void BaseFEM::get_Stress_Quad(MATRIX& stress){
     ifStress = true;
@@ -79,7 +79,7 @@ void BaseFEM::get_Stress_Quad(MATRIX& stress){
         outfile << endl;
     }
     outfile.close();
-}
+};
 /// get the stress on Nodes
 void BaseFEM::get_Stress_Node(MATRIX& stress){
     ifStress = true;
@@ -105,7 +105,7 @@ void BaseFEM::get_Stress_Node(MATRIX& stress){
         outfile << endl;
     }
     outfile.close();
-}
+};
 /// get the Matrix information on each Nodes
 void BaseFEM::get_NodeMatInfo(){
     int NS = 2*NumShape;
@@ -142,7 +142,7 @@ void BaseFEM::get_NodeMatInfo(){
             StressMatsNode.push_back(stress);
         }
     }
-}
+};
 /// write result into file
 bool BaseFEM::writeFile(string filename) const {
     ofstream logFile(filename);
@@ -155,4 +155,4 @@ bool BaseFEM::writeFile(string filename) const {
     }
     logFile.close();
     return true;
-}
+};
