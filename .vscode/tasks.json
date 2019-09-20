@@ -16,6 +16,11 @@
             "label": "CMAKE",
             "type": "shell",
             "command": "cd ./build && cmake ..",
+        },
+        {
+            "label": "clean",
+            "type": "shell",
+            "command": "cd ./build && make clean",
         }
     ]
 }

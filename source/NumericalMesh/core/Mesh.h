@@ -13,15 +13,17 @@ namespace NumericalMesh {
         INTE id;
         vector<INTE> vertex;
         POINT2 midPoint;
-        REAL size;
         vector<POINT2> nvec;
 
         MATRIX quadPoints;
         VEC quadParameters;
 
         vector<MATRIX> quadPointsBound;
-        vector<VEC> quadPointsBound;
+        vector<VEC> quadParametersBound;
         vector<int> NeiEleID;
+
+        REAL Size(){return size;};
+        void set_size();
     };
 
     class BaseMesh {

@@ -4,8 +4,8 @@ set (CMAKE_C_COMPILER "/usr/bin/gcc")
 #project info
 project(Hello)
 #set version
-set (FEM_VERSION_MAJOR 0)
-set (FEM_VERSION_MINOR 0)
+set (OPTIMIZATION_VERSION_MAJOR 0)
+set (OPTIMIZATION_VERSION_MINOR 0)
 
 set (CMAKE_BUILD_TYPE "Release")
 #set (CMAKE_BUILD_TYPE "Debug")
@@ -15,9 +15,10 @@ add_subdirectory(./source/OpenMesh)
 add_subdirectory(./source/NumericalMethods)
 # Target
 aux_source_directory(./source/Test/Optimization/ TEST_PROJ)
-add_executable(hello.o ${TEST_PROJ})
+add_executable(optimization.o ${TEST_PROJ})
 # link
-target_link_libraries(hello.o OpenMesh
+target_link_libraries(optimization.o 
+    OpenMesh
     NumericalMesh
     NumericalMethods)
 # set output directories
